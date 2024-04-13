@@ -14,11 +14,11 @@ That's a difficult ask for teams new to security or have enough on their plates 
 
 [Here we can see a list of all your resources with the misconfigurations and threats highlighted at the top.](https://app.datadoghq.com/infrastructure/catalog?activePanel=resource-catalog-main-panel&fillBy=cspm&groupBy=resource_category&page=0&pageSize=50&sort=team&tab=security&viz=list) 
 
-Below, we see all of our resources distributed by resource categories and associated threats and misconfigurations. 
+Below, we see all of our resources distributed by resource categories and associated threat signals and misconfigurations. 
 
 This helps us determine where many of the issues are located. We can click into them and see the exact resource name, region and other details pinpointing the location. 
 
-###### Pivot into Infra Resource (Map) fill by threats
+###### Pivot into Infra Resource (Map) fill by signals (last dropdown)
 
 The list view is great, but with a resource map, this provides us a bird eye’s view of all the information -- allowing us to quickly locate and investigate any issues. 
 
