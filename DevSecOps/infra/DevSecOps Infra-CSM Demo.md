@@ -1,24 +1,26 @@
 # DevSecOps Infra-CSM Demo
 
-###### Introduction
-
-[Just as your team is responsible for monitoring and proactively responding to discrepancies and issues in your infrastructure, we're increasingly seeing many DevOps teams becoming explicitly responsible for tackling security issues.](https://app.datadoghq.com/process?selectedTopGraph=timeseries) 
+###### [Introduction](https://app.datadoghq.com/process?selectedTopGraph=timeseries)
 
 ![0-Infra-CSM-Start](images/0-Infra-CSM-Start.png)
 
+Just as your team is responsible for monitoring and proactively responding to discrepancies and issues in your infrastructure, we're increasingly seeing many DevOps teams becoming explicitly responsible for tackling security issues.
+
 That's a difficult ask for teams new to security or have enough on their plates already, which is why we make that responsibility as intuitive as possible with our infrastructure and security correlation.
 
-###### **Pivot into Infra Resource Catalog (list)**
+###### [**Pivot into Infra Resource Catalog (list)**](https://app.datadoghq.com/infrastructure/catalog?activePanel=resource-catalog-main-panel&fillBy=cspm&groupBy=resource_category&page=0&pageSize=50&sort=team&tab=security&viz=list)
 
 ![1-Resource-Catalog](images/1-Resource-Catalog.png)
 
-[Here we can see a list of all your resources with the misconfigurations and threats highlighted at the top.](https://app.datadoghq.com/infrastructure/catalog?activePanel=resource-catalog-main-panel&fillBy=cspm&groupBy=resource_category&page=0&pageSize=50&sort=team&tab=security&viz=list) 
+Here we can see a list of all your resources with the misconfigurations and threat signals highlighted at the top. 
 
 Below, we see all of our resources distributed by resource categories and associated threat signals and misconfigurations. 
 
 This helps us determine where many of the issues are located. We can click into them and see the exact resource name, region and other details pinpointing the location. 
 
-###### Pivot into Infra Resource (Map) fill by signals (last dropdown)
+###### [Pivot into Infra Resource (Map) fill by signals (last dropdown)](https://app.datadoghq.com/infrastructure/catalog?activePanel=resource-catalog-main-panel&fillBy=cws&groupBy=resource_category&page=0&pageSize=50&sort=team&tab=security&viz=map)
+
+![2-Resource-Catalog-Map-Signals](images/2-Resource-Catalog-Map-Signals.png)
 
 The list view is great, but with a resource map, this provides us a bird eye’s view of all the information -- allowing us to quickly locate and investigate any issues. 
 
@@ -26,15 +28,23 @@ Think of this as the host map from a security context.
 
 ###### Click into a finding (hexagon)
 
+###### ![3-Resource-Catalog-Map-Finding.png](images/3-Resource-Catalog-Map-Finding.png)
+
 I’m able to hop right into any resource that has an issue and begin investigating. 
+
+###### [Click on Security tab](https://app.datadoghq.com/infrastructure/catalog?activePanel=resource-catalog-main-panel&fillBy=cws&groupBy=resource_category&page=0&pageSize=50&resourceId=1ddb90ec2bbf34cb03d70e0d796bb978&sidePanelTab=security&sort=team&sp=%5B%7B%22sa%22%3Atrue%2C%22i%22%3A%22resource-catalog-main-panel%22%7D%2C%7B%22sa%22%3Atrue%2C%22i%22%3A%22resource-catalog-main-panel%22%7D%5D&tab=security&viz=map) 
+
+![4-Resource-Catalog-Infra-Host-Security-Tab.png](images/4-Resource-Catalog-Infra-Host-Security-Tab.png)
 
 From here, I’d like to go even further and understand what else could potentially be happening.
 
-###### Click on a finding within the side panel
+###### [Click on a finding within the right side panel (Investigate Button)](https://app.datadoghq.com/infrastructure/catalog?activePanel=resource-catalog-security-signals-panel&fillBy=cws&groupBy=resource_category&page=0&pageSize=50&resourceId=1ddb90ec2bbf34cb03d70e0d796bb978&secId=AQAAAY7YZEC8wcCyngAAAABBWTdZWkVDOEFBRG9PRlltU0F1VzV3QUE&secTab=overview&sidePanelTab=security&sort=team&sp=%5B%7B%22sa%22%3Atrue%2C%22i%22%3A%22resource-catalog-main-panel%22%7D%2C%7B%22sa%22%3Atrue%2C%22i%22%3A%22resource-catalog-main-panel%22%7D%2C%7B%22i%22%3A%22resource-catalog-security-signals-panel%22%7D%5D&tab=security&viz=map)
+
+![5-Resource-Catalog-Infra-Security-Signal-Investigate](images/5-Resource-Catalog-Infra-Security-Signal-Investigate.png)
 
 Right from infrastructure, I’m able to easily pivot into Cloud Security Management (CSM) and proceed with my analysis. 
 
-###### Currently in CSM Security Signal 
+###### Click on "View In Signal Explorer" -- Currently in CSM Security Signal 
 
 Welcome to CSM! 
 
@@ -42,7 +52,11 @@ Here I can get deeper insights into malicious actions within my workloads and mi
 
 We’re currently scoped to a security signal allowing you to further investigate this attack and correlate against the observability metrics.
 
-###### Click into “Security Inbox”
+![6-CSM-Signals.png](images/6-CSM-Signals.png)
+
+###### [Click into “Security Inbox”](https://app.datadoghq.com/security/issues?si-type=cloud_security_management)
+
+![7-CSM-Inbox](images/7-CSM-Inbox.png)
 
 With the amount of signals coming in, I’m sure you’d prefer a way to prioritize the most important security issues impacting your workloads. 
 
