@@ -1,20 +1,22 @@
 # DevSecOps APM-ASM Demo
 
-###### Introduction
+###### [Introduction](https://app.datadoghq.com/apm/home)
 
 While handling performance issues surrounding your applications is top of mind, we’re increasingly seeing a disconnect between observability and application security. 
 
 Thus, leaving application development teams in the dark regarding their vulnerabilities.
 
-###### Pivot into APM Service Catalog
+###### [Pivot into APM Service Catalog](https://app.datadoghq.com/services?env=%2A&fromUser=true&hostGroup=demo-dpn-us-west&lens=Ownership)
+
+
 
 With Datadog’s Application Vulnerability Management, we can highlight and correlate your application observability data alongside your security insights. 
 
-###### Pivot into Security tab within APM Service Catalog
+###### [Pivot into Security tab within APM Service Catalog](https://app.datadoghq.com/services?env=%2A&fromUser=true&hostGroup=demo-dpn-us-west&lens=Security&sort=-fave%2Cteam)
 
 From here, we can capture those open source code vulnerabilities associated with your application and gain visibility into your attack exposure to monitor suspicious requests. This allows you the ability to begin your security investigation surrounding your applications and highlight issues you were unaware of. 
 
-###### Hover over any critical vulnerabilities and click into a vulnerability 
+###### [Hover over any critical vulnerabilities and click into a vulnerability](https://app.datadoghq.com/services?env=%2A&fromUser=true&hostGroup=demo-dpn-us-west&lens=Security&panelTab=details&security_vulnerability=0910fdf0a8a0b578214707a07cd63029&selectedService=product-recommendation&sort=-fave%2Cteam) 
 
 Let’s say we’re curious about a specific vulnerability. 
 
@@ -22,7 +24,7 @@ We can pivot into the vulnerability itself and obtain details surrounding what h
 
 Although, I’d like a more formalized review and deeper insights -- as this is a critical vulnerability within my application. 
 
-###### Vulnerability Sidepanel
+###### [Vulnerability Sidepanel](https://app.datadoghq.com/services?detection=runtime&env=%2A&fromUser=true&hostGroup=demo-dpn-us-west&lens=Security&panelTab=details&security_vulnerability=0910fdf0a8a0b578214707a07cd63029&selectedService=product-recommendation&sort=-fave%2Cteam&start=1713544416531&end=1713548016531)
 
 Software Composition Analysis (SCA) offers built-in detection capabilities that warn you about vulnerabilities detected in your services’ open source dependencies. 
 
@@ -36,11 +38,11 @@ Within the signal we have details surrounding what this exact vulnerability cont
 
 We then analyze the severity of the application vulnerability against a base score with the associated CVSS. With our Datadog Severity Score for Vulnerabilities we build upon the industry standard CVSS score and add Datadog specific runtime context to help customers focus on the most important vulnerabilities that need immediate attention. We take into consideration services being deployed in production and whether they’re exposed to attack traffic and to rescore the severity of the vulnerability. This helps determine if the vulnerability is critical and needs immediate attention or if you can wait to patch at a later time.
 
-###### Click into Remediation Options
+###### ![remediation-options](images/remediation-options.png)Click into Remediation Options
 
 Now you’re given all this context, how would we resolve this issue? With our smart remediation tool we not only provide you with all the remediation options but the best option for your environment. Thus helping you quickly resolve as needed. As you can see we’re able to obtain a wide range of coverage within this single pane. 
 
-###### ASM Overview (click into tab)
+###### [ASM Overview](https://app.datadoghq.com/security/appsec) (click into tab)
 
 Finally, with Datadog ASM you can enable our Threats and Protection with just 1 click to capture malicious requests for when your applications are running. The overview page is the headquarters of your application vulnerabilities with top vulnerabilities and posture evolution to give you a bird’s eye view of everything that is malicious within your environment. This enables for quick detection and investigation. 
 

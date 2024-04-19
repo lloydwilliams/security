@@ -44,13 +44,15 @@ From here, I’d like to go even further and understand what else could potentia
 
 Right from infrastructure, I’m able to easily pivot into Cloud Security Management (CSM) and proceed with my analysis. 
 
-###### Click on "View In Signal Explorer" -- Currently in CSM Security Signal 
+###### [Click on "View In Signal Explorer" -- Currently in CSM Security Signal](https://app.datadoghq.com/security?query=%40workflow.rule.type%3A%22Workload%20Security%22&column=time&event=AQAAAY7dwYlHw2AcXwAAAABBWTdkd1lsSEFBQkt2RWRfSWhDZm5nQUE&fromUser=false&order=desc&product=cws&start=1712584751278&end=1713189551278&paused=false) 
 
 Welcome to CSM! 
 
 Here I can get deeper insights into malicious actions within my workloads and misconfigurations as well as compliance checks surrounding my cloud resources. 
 
-We’re currently scoped to a security signal allowing you to further investigate this attack and correlate against the observability metrics.
+We’re currently scoped to a security signal allowing you to further investigate this attack and correlate against the observability metrics. 
+
+(close the side panel)
 
 ![6-CSM-Signals.png](images/6-CSM-Signals.png)
 
@@ -64,7 +66,7 @@ You can do just that with our security inbox.
 
 This cuts down the noise to help you manage different factors of risk.
 
-###### Click into an “IAM Role” Critical Signal 
+###### [Click into a Critical Signal  (e.g. “IAM Role”)](https://app.datadoghq.com/security?query=%40workflow.rule.type%3A%22Workload%20Security%22%20status%3Acritical&column=time&fromUser=false&order=desc&product=cws&viz=stream&start=1712941506184&end=1713546306184&paused=false)
 
 Right from here we can dive into an investigation with a description as to why this is an issue. 
 
@@ -72,7 +74,7 @@ We provide remediation steps on how to resolve this and pinpoint the resources t
 
 This provides us with all the context to understand the full scope of the security event.
 
-###### Click into CSM Vulnerabilities -> click into a critical finding -> click into resource in the dropdown
+###### [Click into CSM Vulnerabilities](https://app.datadoghq.com/security/csm/vm?query=severity%3A%28Critical%20OR%20High%20OR%20Medium%20OR%20Low%29%20status%3A%28Open%20OR%20%22In%20progress%22%29%20fix_available%3AAvailable&group=vulnerability) -> click into a critical finding -> click into resource in the dropdown
 
 Now let’s say we want deeper insights combining that infra observability with security insights. 
 
@@ -91,7 +93,7 @@ Additionally, with our Datadog severity breakdown, we will analyze the resource 
 
 Once that’s been determined, you can follow the next steps to remediate this vulnerability and resolve the issue. 
 
-###### Click into Identity Risk 
+###### [Click into Identity Risk](https://app.datadoghq.com/security/identities) 
 
 Now, pivoting into risk surrounding your IAM configurations within your cloud environment, Datadog **Cloud Infrastructure Entitlement Management**, also known as CIEM, enables you to identify and address - identity risks in your IAM configurations before a threat actor can exploit them.
 
@@ -99,7 +101,7 @@ Mismanagement of these permissions can cause breaches and insider threats.
 
 Therefore, getting ahead of this, reduces that potential of risk whilst leveraging identity best practices. 
 
-###### Click into Compliance 
+###### [Click into Compliance](https://app.datadoghq.com/security/compliance/home) 
 
 When there’s a lack of visibility within infrastructure, it most likely will be the same with compliance. 
 
@@ -111,17 +113,17 @@ The posture scores help you determine how compliant you are against those benchm
 
 Additionally, it’s easy to share this information within your applicable teams or auditors for evidence during an evaluation.
 
-###### Click into SOC 2 Framework -> click into any critical/high finding
+###### [Click into SOC 2 Framework](https://app.datadoghq.com/security/compliance/home/soc-2?) -> [click into any critical/high finding](https://app.datadoghq.com/security/compliance/home/soc-2?panels=cprule%7Crule%7CruleId%3Adef-000-91j%7CresourceId%3A%7Ccontext%3A%7CshowEvaluation%3Atrue&timestamp=1713546847504&live=true)
 
 Lets take for example SOC 2. 
 
 We can dive into our findings and we’re provided with a description and rationale as seen earlier in our demo as well as the remediation steps.
 
-###### Click into one of “resources impacted”
+###### [Click into one of “resources impacted”](https://app.datadoghq.com/security/compliance/home/soc-2?panels=cprule%7Crule%7CruleId%3Adef-000-91j%7CresourceId%3A%7Ccontext%3A%7CshowEvaluation%3Atrue&timestamp=1713546968242&live=true)
 
 But I’d like to gather deeper insights into the resources that were impacted.
 
-###### Click into resource 
+###### [Click into resource](https://app.datadoghq.com/security/compliance/home/soc-2?panels=cprule%7Crule%7CruleId%3Adef-000-91j%7CresourceId%3A%7Ccontext%3A%7CshowEvaluation%3Atrue%2Ccpfinding%7C2869%7CruleId%3Adef-000-91j%7CresourceId%3Abaefef872beaecea49d0f4b5ac21748c%7CtabId%3Aoverview%7Ccontext%3A&timestamp=1713546968242&live=true) 
 
 From here, I can obtain the resource type with its ID. 
 
@@ -135,7 +137,7 @@ But I’m also able to triage my findings and:
 
 All accomplished within this single pane, thus cutting down time to detection and resolution.
 
-###### CSM Overview  
+###### [CSM Overview](https://app.datadoghq.com/security/csm)  
 
 Finally, with our CSM overview, you get a bird eye’s view of everything from: 
 
