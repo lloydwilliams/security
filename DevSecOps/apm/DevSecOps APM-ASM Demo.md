@@ -8,17 +8,19 @@ Thus, leaving application development teams in the dark regarding their vulnerab
 
 ###### [Pivot into APM Service Catalog](https://app.datadoghq.com/services?env=%2A&fromUser=true&hostGroup=demo-dpn-us-west&lens=Ownership)
 
-
+![service-catalog](images/01-service-catalog.png)
 
 With Datadog’s Application Vulnerability Management, we can highlight and correlate your application observability data alongside your security insights. 
 
 ###### [Pivot into Security tab within APM Service Catalog](https://app.datadoghq.com/services?env=%2A&fromUser=true&hostGroup=demo-dpn-us-west&lens=Security&sort=-fave%2Cteam)
 
+![security-tab](images/security-tab.png)
+
 From here, we can capture those open source code vulnerabilities associated with your application and gain visibility into your attack exposure to monitor suspicious requests. This allows you the ability to begin your security investigation surrounding your applications and highlight issues you were unaware of. 
 
 ###### [Hover over any critical vulnerabilities and click into a vulnerability](https://app.datadoghq.com/services?env=%2A&fromUser=true&hostGroup=demo-dpn-us-west&lens=Security&panelTab=details&security_vulnerability=0910fdf0a8a0b578214707a07cd63029&selectedService=product-recommendation&sort=-fave%2Cteam) 
 
-Let’s say we’re curious about a specific vulnerability. 
+![hover-vulnerability](images/03-hover-vulnerability.png)Let’s say we’re curious about a specific vulnerability. 
 
 We can pivot into the vulnerability itself and obtain details surrounding what has happened and the associated remediation steps. 
 
@@ -31,6 +33,8 @@ Software Composition Analysis (SCA) offers built-in detection capabilities that 
 Details of that information are shown in the Vulnerability Sidepanel, such as identifying the severity, affected services, potentially vulnerable infrastructure, and remediation instructions to solve the surfaced risks.
 
 ###### Remain in the Vulnerability and expand “what happened”
+
+![what-happened](images/05-what-happened.png)
 
 Within the signal we have details surrounding what this exact vulnerability contains and its impact on your application. I can see when this was last detected and the window of exposure enabling you to gain insight as to how long this issue has been unpatched. (POINT TO AFFECTED INFRA). To understand the breadth of the attack you can check into the underlying infrastructure to see if anything else was compromised. 
 
