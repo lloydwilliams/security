@@ -44,7 +44,7 @@ From here, I’d like to go even further and understand what else could potentia
 
 Right from infrastructure, I’m able to easily pivot into Cloud Security Management (CSM) and proceed with my analysis. 
 
-###### [Click on "View In Signal Explorer" -- Currently in CSM Security Signal](https://app.datadoghq.com/security?query=%40workflow.rule.type%3A%22Workload%20Security%22&column=time&event=AQAAAY7dwYlHw2AcXwAAAABBWTdkd1lsSEFBQkt2RWRfSWhDZm5nQUE&fromUser=false&order=desc&product=cws&start=1712584751278&end=1713189551278&paused=false) 
+##### [Click on "View In Signal Explorer" -- Currently in CSM Security Signal](https://app.datadoghq.com/security?query=%40workflow.rule.type%3A%22Workload%20Security%22&column=time&event=AQAAAY7dwYlHw2AcXwAAAABBWTdkd1lsSEFBQkt2RWRfSWhDZm5nQUE&fromUser=false&order=desc&product=cws&start=1712584751278&end=1713189551278&paused=false) 
 
 Welcome to CSM! 
 
